@@ -41,6 +41,12 @@ TextFormField(
     hintText: 'Saisir votre mot de passe',
   ),
   obscureText: true,
+  validator: (value) {
+  if (value == null || value.length < 8) {
+    return 'Le mot de passe doit contenir au moins 8 caractères';
+  }
+  return null;
+},
 ),
           ],
         ),
