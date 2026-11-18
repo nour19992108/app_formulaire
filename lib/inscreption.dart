@@ -57,6 +57,12 @@ ElevatedButton(
   onPressed: () {
     if (_formKey.currentState!.validate()) {
       print('Formulaire valide');
+      ScaffoldMessenger.of(context).showSnackBar(
+  SnackBar(
+    content: Text('${_emailController.text} est inscrit.'),
+  ),
+);
+_formKey.currentState!.reset();
     }
   },
   child: Text('Inscription'),
