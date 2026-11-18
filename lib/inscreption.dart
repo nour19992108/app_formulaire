@@ -9,7 +9,8 @@ class Inscription extends StatefulWidget {
 
 class _InscriptionState extends State<Inscription> {
   final _formKey = GlobalKey<FormState>();
-
+final _emailController = TextEditingController();
+final _passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,6 +22,7 @@ class _InscriptionState extends State<Inscription> {
         child: Column(
           children: [
             TextFormField(
+              controller: _emailController,
   decoration: const InputDecoration(
     border: OutlineInputBorder(),
     labelText: 'Email',
@@ -35,6 +37,7 @@ class _InscriptionState extends State<Inscription> {
 ),
 SizedBox(height: 20),
 TextFormField(
+  controller: _passwordController,
   decoration: const InputDecoration(
     border: OutlineInputBorder(),
     labelText: 'Password',
