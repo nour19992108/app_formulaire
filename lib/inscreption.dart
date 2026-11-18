@@ -48,6 +48,16 @@ TextFormField(
   return null;
 },
 ),
+SizedBox(height: 20),
+
+ElevatedButton(
+  onPressed: () {
+    if (_formKey.currentState!.validate()) {
+      print('Formulaire valide');
+    }
+  },
+  child: Text('Inscription'),
+),
           ],
         ),
       ),
