@@ -26,6 +26,12 @@ class _InscriptionState extends State<Inscription> {
     labelText: 'Email',
     hintText: 'Saisir votre email',
   ),
+  validator: (value) {
+  if (value == null || value.isEmpty) {
+    return 'Email invalide';
+  }
+  return null;
+}
 ),
 SizedBox(height: 20),
 TextFormField(
