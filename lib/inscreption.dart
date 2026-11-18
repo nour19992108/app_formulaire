@@ -27,6 +27,15 @@ class _InscriptionState extends State<Inscription> {
     hintText: 'Saisir votre email',
   ),
 ),
+SizedBox(height: 20),
+TextFormField(
+  decoration: const InputDecoration(
+    border: OutlineInputBorder(),
+    labelText: 'Password',
+    hintText: 'Saisir votre mot de passe',
+  ),
+  obscureText: true,
+),
           ],
         ),
       ),
