@@ -20,6 +20,13 @@ class _InscriptionState extends State<Inscription> {
         key: _formKey,
         child: Column(
           children: [
+            TextFormField(
+  decoration: const InputDecoration(
+    border: OutlineInputBorder(),
+    labelText: 'Email',
+    hintText: 'Saisir votre email',
+  ),
+),
           ],
         ),
       ),
